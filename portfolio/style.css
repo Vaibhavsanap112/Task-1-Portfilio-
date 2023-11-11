@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.all {
+
+    margin-top: 8px;
+
+
+
+    background-color: rgb(198, 211, 22);
+
+
+
+    top: 0;
+}
+
+.nav {
+
+    background-color: rgb(198, 211, 22);
+    
+
+
+    display: flex;
+
+    float: right;
+}
+
+.single {
+    font-size: 25px;
+    position: absolute;
+    float: left;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: 900;
+    margin-left: 60px;
+    text-shadow: 0 0 10px rgb(12, 146, 199),
+        0 0 20px rgb(18, 158, 213),
+        0 0 40px rgb(23, 146, 195),
+        0 0 80px rgb(20, 144, 194),
+        0 0 120px rgb(20, 160, 215);
+
+}
+
+.nav ul {
+    display: flex;
+    margin-top: 20px;
+
+
+
+    margin-right: 90px;
+    float: right;
+    gap: 3rem;
+    list-style: none;
+}
+
+.nav ul li a {
+
+    float: right;
+    text-decoration: none;
+    font-weight: 1000;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    animation: light 1.3s linear infinite;
+    color: black;
+    }
+
+
+.nav ul li {
+    font-size: 25px;
+}
+
+
+
+
+
+
+@keyframes light {
+
+    0% {
+        color: rgb(4, 4, 4);
+        text-shadow: none;
+
+    }
+
+    90% {
+        color: rgb(1, 110, 182);
+        text-shadow: none;
+
+    }
+
+    100% {
+        color: blue;
+        text-shadow: 0 0 1rem #0787f6, 0 0 7rem #0080cb;
+
+    }
+}
+
+.nav ul li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.nav ul li:nth-child(2) {
+    animation-delay: 0.1ms;
+}
+
+.nav ul li:nth-child(3) {
+    animation-delay: 0.3ms;
+}
+
+.nav ul li:nth-child(4) {
+    animation-delay: 0.4ms;
+}
+
+
+
+
+.data {
+    position: absolute;
+    left: 65%;
+    top: 35%;
+
+
+}
+
+.data h1 {
+    font-size: 50px;
+    font-weight: 900;
+    margin: 0.5rem;
+    left: 20%;
+    text-shadow: 0 0 10px skyblue,
+        0 0 20px skyblue,
+        0 0 40px skyblue,
+        0 0 80px skyblue,
+        0 0 120px skyblue;
+
+}
+
+.lightbar {
+    height: 100%;
+    width: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    
+    border-radius: 10px;
+    background-color: rgb(5, 5, 5);
+    z-index: 2;
+    box-shadow: 0 0 10px skyblue,
+        0 0 20px skyblue,
+        0 0 40px skyblue,
+        0 0 80px skyblue,
+        0 0 120px skyblue;
+    animation: animatelightbar 5s linear infinite;
+}
+
+@keyframes animatelightbar {
+
+    0%,
+    5% {
+        transform: scaleY(0) translateX(0);
+    }
+
+    10% {
+        transform: scaleY(1) translateX(0);
+
+    }
+
+    90% {
+        transform: scaleY(1) translateX(calc(600px - 10px));
+    }
+    95%,100% {
+        transform: scaleY(0) translateX(calc(600px - 10px));
+    }
+}
+
+.data h2 {
+    height: 100%;
+    width: 10px;
+    font-size: 50px;
+    font-weight: 900;
+    display: inline;
+    margin-bottom: 26rem;
+    left: 11%;
+    text-shadow: 0 0 10px skyblue,
+    
+        0 0 20px skyblue,
+        0 0 40px skyblue,
+        0 0 80px skyblue,
+        0 0 120px skyblue;
+        z-index: 2;
+    
+
+}
+
+@keyframes animatelightbar {
+
+    0%,5%
+    {
+        transform: scaleY(0) translateX(0);
+    }
+
+    10% {
+        transform: scaleY(1) translateX(0);
+
+    }
+
+    90% {
+        transform: scaleY(1) translateX(calc(600px - 10px));
+    }
+    95%,100% {
+        transform: scaleY(1) translateX(calc(600px - 10px));
+    }
+}
+
+.image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 70px;
+    align-content: center;
+}
+
+.image img {
+
+
+    width: 350px;
+    z-index: 1;
+}
+
+.rotat {
+    position: absolute;
+    left: 250px;
+    top: 100px;
+    background: transparent;
+    border: 1px solid #0670d9;
+    width: 450px;
+    height: 450px;
+    border-radius: 59% 41% 36% 64% / 41% 36% 64% 59%;
+    animation: rotat 15s linear infinite;
+}
+
+.rotat2 {
+    border: 1px solid #0c8eff;
+    border-radius: 59% 41% 36% 64% / 41% 36% 64% 59%;
+    animation: rotat2 15s linear infinite;
+}
+
+@keyframes rotat {
+    to {
+        rotate: 360deg;
+    }
+}
+
+@keyframes rotat2 {
+    to {
+        rotate: -360deg;
+    }
+}
+
+.next {
+    height: 200px;
+    background-color: rgba(20, 213, 213, 0.64);
+}
+
+.my {}
+
+.my h1 {
+    font-size: 30px;
+
+
+    text-align: center;
+    top: 90%;
+    left: 50%;
+    text-shadow: 0 0 10px skyblue,
+        0 0 20px skyblue,
+        0 0 40px skyblue,
+        0 0 80px skyblue,
+        0 0 120px skyblue;
+
+}
+
+.next h3 {
+    position: absolute;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 3px;
+    
+    font-weight: 900;
+    line-height: 20px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 25px;
+
+    text-align: center;
+    text-align: justify;
+    text-shadow: 0 0 10px skyblue,
+        0 0 20px skyblue,
+        0 0 40px skyblue,
+        0 0 80px skyblue,
+        0 0 120px skyblue;
+    
+
+
+}
+@keyframes animatelightbar {
+
+    0%,
+    5% {
+        transform: scale(0) translateX(0);
+    }
+
+    10% {
+        transform: scale(1) translateX(0);
+
+    }
+
+    90% {
+        transform: scaleY(1) translateX(calc(600px - 10px));
+    }
+}
+.logo{
+    padding: 10px;
+    margin-left: 120px;
+    size: 12px;
+    
+}
+.logo i{
+
+    padding: 8px;
+}
+section{
+    background:grey;
+}
+.projects img{
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    top: 850px;
+    left: 40px;
+   
+}
+.projects math img{
+    position: absolute;
+    float: right;
+}
+ .section .netfllix{
+    position: absolute;
+    margin-left: 50%;
+}

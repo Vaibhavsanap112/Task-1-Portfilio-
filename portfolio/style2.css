@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.hero{
+    max-width: 100%;
+    max-height: 100vh;
+    background: #fff;
+}
+
+nav{
+    max-width: 100%;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 60px 150px;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 4rem;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    transition: all .3s ease-in-out;
+}
+
+.active{
+    color: #ffce0d;
+}
+
+a:hover{
+    color: #ffce0d;;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 70px;
+    align-content: center;
+}
+
+.home img{
+    width: 400px;
+    z-index: 1;
+}
+
+.home-data{
+    text-align: center;
+}
+
+.home-data h1{
+    font-size: 3rem;
+    color: #ffce0d;
+    margin-bottom: 1rem;
+}
+
+.home-data h2{ 
+
+    font-size:2 rem;
+    color: #3c3b36;
+    margin-bottom: 3rem;
+}
+
+.home-data .button{
+    padding: 10px 20px;
+    background: #ffce0d;
+    color: #000;
+    border-radius: 6px;
+    transition: all 2000ms ease-in-out;
+}
+
+.home-data .button:hover{
+    background: #000;
+    color: #fff;
+}
+
+.rotat{
+    position: absolute;
+    left: 200px;
+    top: 166px;
+    background: transparent;
+    border: 1px solid #ffce0d;
+    width: 450px;
+    height: 450px;
+    border-radius: 59% 41% 36% 64% / 41% 36% 64% 59%;
+    animation: rotat 15s linear infinite;
+}
+
+.rotat2{
+    border: 1px solid #0c8eff;
+    border-radius: 59% 41% 36% 64% / 41% 36% 64% 59%;
+    animation: rotat2 15s linear infinite;
+}
+
+@keyframes rotat{
+    to{
+        rotate: 360deg;
+    }
+}
+
+@keyframes rotat2{
+    to{
+        rotate: -360deg;
+    }
+}
